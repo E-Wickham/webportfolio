@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -172,7 +171,7 @@ margin-bottom: 50px;
     top: 200px;
     margin-top: 40px;
     background-color: midnightblue;
-    height: 800px;
+    height: 100%;
     color: lightblue;
     z-index: -1;
 }
@@ -200,12 +199,6 @@ margin-bottom: 50px;
 
 /*Portfolio Items*/
 
-.coding-folder-content {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
 
 .portfolio-content-wrapper{
     display:flex;
@@ -233,7 +226,8 @@ margin-bottom: 50px;
 
 }
 
-.portfolio-content-link{
+.portfolio-content-link, .portfolio-content-source{
+    transition: 0.2s;
     border: 2px solid black;
     text-decoration: none;
     margin-top: 10px;
@@ -244,17 +238,15 @@ margin-bottom: 50px;
 
 
 }
-.portfolio-content-source{
-    border: 2px solid black;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "Patua One";
-    padding-top: 5px;
 
+.portfolio-content-link:hover,.portfolio-content-source:hover{
+    transition: 0.2s;
+    background-color: white;
 }
-
+.portfolio-content-link > a,.portfolio-content-source > a {
+    color: black;
+    text-decoration: none;
+}
 .iconpic {
     display: block;
     margin-bottom: 20px;
@@ -264,7 +256,7 @@ margin-bottom: 50px;
     display: none;
     transition: 0.3s;
 }
-#journalism-folder-content {
+#web-design-folder-content {
     display: none;
     transition: 0.3s;
     position: relative;
@@ -272,7 +264,7 @@ margin-bottom: 50px;
     bottom: 600px;
 }
 
-#podcast-folder-content {
+#script-folder-content {
     position: relative;
     z-index: 7;
     display: none;
@@ -289,14 +281,15 @@ margin-bottom: 50px;
 
 .lang-title{
     text-align: center;
+    font-size: 3rem;
+    padding: 30px 0;
 }
 
 .lang-box{
     display: block;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
+
+    margin: 30px auto;
     background: repeating-linear-gradient(
         45deg,
         
@@ -310,7 +303,7 @@ margin-bottom: 50px;
 
 .lang-flex{
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
 }
 
 .lang-item {
@@ -318,5 +311,6 @@ margin-bottom: 50px;
     text-align: center;
     border: 2px solid lightblue;
     margin: 10px;
-    padding-top: 5px;
+    padding: 5px;
+    min-width: 250px;
 }
