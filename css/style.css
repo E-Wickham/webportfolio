@@ -174,12 +174,6 @@ margin-bottom: 50px;
     padding-right: 30px;
 }
 
-#headshot {
-    flex: 1 0 0;
-    max-width: 300px;
-    margin-right: 30px;
-    padding-bottom: 30px;
-}
 
 #aboutText {
     flex: 1 0 0;
@@ -222,7 +216,12 @@ margin-bottom: 50px;
    
 }
 
-
+#headshot {
+    display: block;
+    margin: 30px auto;
+    width: 70%;
+    border-radius: 10px;
+}
 /*Portfolio Items*/
 
 
