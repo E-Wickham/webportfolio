@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+li > a {
+    transition:0.2s;
+    color: black;
+}
+li > a:hover {
+    color: midnightblue;
+}
+.contact-buttons {
+    position:absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.contact-buttons > li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
 body {
     font-family: "Patua One";
 }
@@ -20,7 +39,6 @@ h2,h3,h4 {
     font-family: "Patua One";
 
 }
-
 
 p {
     font-family: Lato;
@@ -45,7 +63,6 @@ p {
     flex: 1 0 0;
 }
 
-
 #helloMsg {
     display: block;
     margin-left: auto;
@@ -59,17 +76,13 @@ p {
     margin-top: 90px;
 }
 
-#helloMsg>h2 {
+#helloMsg > h2 {
     font-size: 4rem;
-
-
 }
 #helloMsg>p {
 margin-top: 50px;
 margin-bottom: 50px;
 }
-
-
 
 #welcome{
     display: flex;
@@ -97,10 +110,16 @@ margin-bottom: 50px;
     margin-left:70px;
     margin-right:70px;
 }
+
 #folderTabs{
     margin-top: 100px;
     padding-left: 10px;
 }
+
+#folderTabs:hover{
+    cursor: pointer;
+}
+
 #folderTabs li{
     font-family: "Patua One";
     padding: 15px;
@@ -182,6 +201,13 @@ margin-bottom: 50px;
     padding: 20px;
 }
 
+.modal-pic {
+    width: 80%;
+    display: block;
+
+    margin: 20px auto;
+}
+
 /* CSS PICS */
 
 #imagedisplay{
@@ -209,10 +235,18 @@ margin-bottom: 50px;
     flex: 1 0 0;
     list-style-type:none;
     position:relative;
-    top: 200px;
+    top: 60px;
     margin-left: auto;
     margin-right: auto;
     max-width: 300px;
+    padding: 50px;
+        transition: 0.2s;
+
+}
+
+.portfolio-content:hover{
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.2s;
 }
 
 
@@ -226,7 +260,15 @@ margin-bottom: 50px;
 
 }
 
-.portfolio-content-link, .portfolio-content-source{
+.portfolio-content-about{
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Patua One";
+    background-color:rgba(255,255,255,0.0);
+    border: 2px solid black;
+}
+
+.portfolio-content-link, .portfolio-content-source {
     transition: 0.2s;
     border: 2px solid black;
     text-decoration: none;
@@ -239,14 +281,21 @@ margin-bottom: 50px;
 
 }
 
-.portfolio-content-link:hover,.portfolio-content-source:hover{
+.portfolio-content-link:hover,.portfolio-content-source:hover, .portfolio-content-about:hover{
     transition: 0.2s;
     background-color: white;
 }
-.portfolio-content-link > a,.portfolio-content-source > a {
+.portfolio-content-link > a,.portfolio-content-source > a, .modal-link > a {
     color: black;
     text-decoration: none;
 }
+
+.modal-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
 .iconpic {
     display: block;
     margin-bottom: 20px;
@@ -283,6 +332,7 @@ margin-bottom: 50px;
     text-align: center;
     font-size: 3rem;
     padding: 30px 0;
+    text-decoration: underline;
 }
 
 .lang-box{
@@ -290,14 +340,7 @@ margin-bottom: 50px;
     width: 50%;
 
     margin: 30px auto;
-    background: repeating-linear-gradient(
-        45deg,
-        
-        rgba(255,255,255,0.1) 5px,
-      
-        midnightblue 10px,
-        midnightblue 15px
-      );
+   
       
 }
 

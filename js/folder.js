@@ -92,28 +92,45 @@ jQuery(document).ready(function () {
         }
     )
 
-// MODAL
-$('#web-projects').click(
-    function(){
-    $('#web-projectsModal').modal('show');
-    });
-
-$('#scripts').click(
-    function(){
-    $('#scriptModal').modal('show');
-    });
-
-$('#web-design').click(
-    function(){
-    $('#designModal').modal('show');
-    });
-$('#misc').click(
-    function(){
-    $('#miscModal').modal('show');
-    });
+// MODALS
 $('#about').click(
     function(){
     $('#aboutModal').modal('show');
+    });
+
+$('#buzzsprout').click(
+    function(){
+    $('#buzzsproutModal').modal('show');
+    });
+
+$('#moviehub').click(
+    function(){
+    $('#moviehubModal').modal('show');
+    });
+
+$('#bromono').click(
+    function(){
+    $('#bromonoModal').modal('show');
+    });
+$('#breadbox').click(
+    function(){
+    $('#breadboxModal').modal('show');
+    });
+$('#webscraper').click(
+    function(){
+    $('#webscraperModal').modal('show');
+    });
+$('#imagemaker').click(
+    function(){
+    $('#igModal').modal('show');
+    });
+$('#passage').click(
+    function(){
+    $('#passageModal').modal('show');
+    });
+$('#macleans').click(
+    function(){
+    $('#macleansModal').modal('show');
     });
 
 });
