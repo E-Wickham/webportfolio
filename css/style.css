@@ -16,6 +16,13 @@ li > a:hover {
     right: 10px;
     top: 20px;
 }
+.contact-btn {
+    cursor: pointer;
+}
+.contact-btn > a {
+    text-decoration: none;
+    color: black;
+}
 
 .contact-buttons > li{
     list-style: none;
@@ -355,4 +362,54 @@ margin-bottom: 50px;
     margin: 10px;
     padding: 5px;
     min-width: 250px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 870px) {
+
+    #folderTabs > ul > li {
+        padding-left: 10px;
+
+        padding-bottom: 25px;
+        padding-top: 10px;
+        margin-left: 0px;
+    }
+
+    #helloMsg {
+
+        width: 80%;
+        padding: 10px;
+        border: black 3px solid;
+        border-radius: 3px;
+        background-color: rgba(255,255,255,0.8);
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .lang-item {
+     
+        margin: 10px;
+        padding: 5px;
+        
+    }
+
+    .lang-box{
+        display: block;
+        max-width: 90%;
+        margin-left: 20%;    
+    }
+
+    .portfolio-content-link, .portfolio-content-source {
+        transition: 0.2s;
+        border: 2px solid black;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: "Patua One";
+        padding-top: 5px;
+    
 }
