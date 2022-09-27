@@ -132,5 +132,8 @@ $('#macleans').click(
     function(){
     $('#macleansModal').modal('show');
     });
-
+$(responsiveCarousel).click(
+    function(){
+    $('#carouselModal').modal('show');
+    });
 });
